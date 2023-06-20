@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "terraform_state" {
 	bucket = var.bucket_name
- 
+    
 # 실수로 s3 버킷을 삭제 하는것을 방지한다. 
 # true : 거부  false :  식제허용
  	
